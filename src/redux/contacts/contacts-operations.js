@@ -43,20 +43,6 @@ export const fetchAddContact = createAsyncThunk(
   }
 );
 
-/*
-export const fetchDeleteContact = id => {
-  const func = async dispatch => {
-    try {
-      dispatch(actions.fetchDeleteContactsLoading());
-      await deleteContact(id);
-      dispatch(actions.fetchDeleteContactsSucces(id));
-    } catch ({ response }) {
-      dispatch(actions.fetchDeleteContactsError(response.data.message));
-    }
-  };
-  return func;
-};
-*/
 export const fetchDeleteContact = createAsyncThunk(
   'contacts/deleteContact',
   async (id, { rejectWithValue }) => {
