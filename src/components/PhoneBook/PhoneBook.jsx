@@ -51,13 +51,13 @@ const PhoneBook = () => {
         </div>
         <div className={styles.block}>
           <ContactFilter value={filter} handleChange={handleFilter} />
+          {!isContacts && <p>No contacts in list</p>}
           {isContacts && (
             <ContactsList
               removeContact={handleDeleteContact}
               contacts={filteredContacts}
             />
           )}
-          {!isContacts && <p>No contacts in list</p>}
         </div>
       </div>
     </div>
