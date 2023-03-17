@@ -15,8 +15,9 @@ const LoginPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1>LoginPage</h1>
-      <LoginForm onSubmit={handleLogin} />
+      <div className={styles.card}>
+        <LoginForm onSubmit={handleLogin} className={styles.block} />
+      </div>
     </div>
   );
 };

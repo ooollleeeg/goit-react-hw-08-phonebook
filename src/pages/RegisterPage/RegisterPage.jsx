@@ -15,8 +15,9 @@ const RegisterPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1>RegisterPage</h1>
-      <RegisterForm onSubmit={handleSignup} />
+      <div className={styles.card}>
+        <RegisterForm onSubmit={handleSignup} />
+      </div>
     </div>
   );
 };

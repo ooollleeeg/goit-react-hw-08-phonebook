@@ -23,7 +23,7 @@ const LoginForm = ({ onSubmit }) => {
         handleChange={handleChange}
         {...fields.password}
       />
-      <Button>Login</Button>
+      <Button type="submit">Login</Button>
     </form>
   );
 };

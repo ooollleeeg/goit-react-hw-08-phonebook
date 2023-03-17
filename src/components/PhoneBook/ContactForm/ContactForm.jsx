@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 import useForm from 'shared/hooks/useForm';
 
+import Button from 'shared/components/Button/Button';
+
 import styles from './contactForm.module.scss';
 
 const ContactForm = ({ onSubmit }) => {
@@ -37,9 +39,7 @@ const ContactForm = ({ onSubmit }) => {
           required
         />
       </div>
-      <button className={styles.btn} type="submit">
-        Add contact
-      </button>
+      <Button type="submit">Add contact</Button>
     </form>
   );
 };

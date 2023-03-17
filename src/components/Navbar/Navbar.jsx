@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-// import UserMenu from './UserMenu/UserMenu';
+import pbook from '../../images/pbook.png';
+
 import UserAuth from './UserAuth/UserAuth';
 import UserLogout from './UserLogout/UserLogout';
 
@@ -14,7 +15,9 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <NavLink to="/">logotyp</NavLink>
+      <NavLink to="/">
+        <img src={pbook} alt="Phonebook" className={styles.logo} />
+      </NavLink>
 
       {!isLogin && <UserAuth />}
       {isLogin && <UserLogout />}

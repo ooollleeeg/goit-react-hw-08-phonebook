@@ -14,7 +14,7 @@ const UserLogout = () => {
   };
   return (
     <div>
-      {name},
+      <span className={styles.username}> Wellcome, {name}</span>
       <button onClick={onLogout} className={styles.btn}>
         Logout
       </button>

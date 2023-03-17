@@ -11,9 +11,9 @@ const ContactsList = ({ removeContact, contacts }) => {
       <span className={styles.itemName}>{number}</span>
 
       <button
-        className={styles.btn}
-        onClick={() => removeContact(id)}
         type="button"
+        onClick={() => removeContact(id)}
+        className={styles.btn}
       >
         Delete
       </button>
